@@ -1,4 +1,3 @@
-# resume
 Repo only to host my personal resume.
 
 Instructions: 
