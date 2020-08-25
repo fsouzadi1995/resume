@@ -1,0 +1,167 @@
+%-------------------------
+% Resume in Latex
+% Original Author : Sourabh Bajaj
+% Collaborators : Santiago Aguilera
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemItalic}[3]{
+  \item\small{
+    \textbf{#1 (\textit{#2})}{: #3 \vspace{-2pt}}
+  }\vspace{-4pt}
+}
+
+\newcommand{\resumeItemAlign}[2]{
+  \vspace{-1pt}\item\small{
+    \textbf{#1} \hfill \textit{#2}
+  }\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+% CV STARTS HERE
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  \textbf{{\Large Fabián Souza Di Paula}}
+\end{center}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  DNI. 93770425 & Email : \href{mailto:fsouzadi1995@gmail.com}{fsouzadi1995@gmail.com}\\
+  Díaz Colodrero 2755, Buenos Aires & Mobile : (+54) 9 11 33156498 \\
+  1995/12/12 & LinkedIn: \href{https://www.linkedin.com/in/fsouzadi1995/}{/in/fsouzadi1995/}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {ORT Argentina}{Buenos Aires}
+    {System Analyst}{Aug 2019 - Present}
+  \resumeSubheading
+    {Instituto CENS 63}{Buenos Aires}
+    {Computing orientation}{2016}
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+	\resumeSubheading
+		{Accenture SRL}{Buenos Aires}
+		{Software Engineer @ CIO LAD Latam}{Jul 2018 - Present}
+			\resumeItemListStart
+ 				\resumeItem{Backend}
+					{REST APIs: notifications API, serving parameterized resources (images, jsons, texts, reports, pdf generation) under .NET Framework .NET Core.} \newline
+					{Interfaces/consoles as background applications used for communication between the different areas of the organization, commonly background jobs.} 
+				\resumeItem{Frontend}
+					{Full-stack development of applications using .NET MVC, SQL Server and Javascript.} \newline
+					{Development of Angular applications from scratch together with Azure Integration, admin features and the latest UI/UX modules implementing ngMaterial, ngZorro and ngGrid.}
+			\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------LANGUAGES-----------------
+\section{Languages}
+\resumeSubHeadingListStart	
+	\resumeItem{C Sharp} 
+	{ASP.NET, ADO.NET, LINQ, .NET MVC, RESTful Web Services, interface/console applications.}\\
+	\resumeItem{SQL Server} 
+	{Transact-SQL, scripts, functions, stored procedures, triggers.}\\
+	\resumeItem{Javascript, Typescript, HTML5, CSS3}{Used within both .NET MVC and Angular apps.}
+\resumeSubHeadingListEnd
+
+
+%----------FRAMEWORKS-----------------
+\section{Frameworks}
+\resumeSubHeadingListStart
+  \resumeItemItalic{Entity Framework} {.NET}
+    {Entity frameworks ranging from version 5 to 6.}
+  \resumeItemItalic{.NET Runtime Frameworks}{.NET}
+    {.NET frameworks from 4.0 to 4.7.2.}
+\resumeItemItalic{.NET Core}{.NET}
+    {.NET Core from version 3.0+.}
+  \resumeItemItalic{Angular}{Javascript}
+    {Angular ranging from version 4 to 10. Angular CLI, RxJS, API consumption, State Management, AngularGrid, ngMaterial.}
+\resumeSubHeadingListEnd
+
+
+%----------SKILLS AND METHODOLOGIES-----------------
+\section{Skills and methodologies}
+
+\resumeSubHeadingListStart
+	\resumeItemAlign{Team Foundation Server}{}
+	\resumeItemAlign{NuGet Package Manager}{}
+	\resumeItemAlign{Node Package Manager/NPM}{}
+	\resumeItemAlign{GitHub}{}
+	\resumeItemAlign{Azure DevOps}{}
+	\resumeItemAlign{UI/UX Responsive Design}{}
+	\resumeItemAlign{Agile methodologies}{}
+\resumeSubHeadingListEnd
+
+\end{document}
